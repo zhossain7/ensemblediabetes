@@ -19,6 +19,9 @@ It inspired me to do reserach and see how exactly AI can help, which led me to t
 ## Project Overview
 
 	
-## Setup
-To run this project, install it locally using npm:
+## Data and Analysis
+The dataset useed for this project is
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/bfe27470-2e66-4146-80bd-e6b76df509a0)
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/d4dd3612-710b-460b-804c-564de8db06fa)
+
 
