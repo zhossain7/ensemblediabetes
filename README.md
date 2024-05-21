@@ -18,8 +18,8 @@ It inspired me to do reserach and see how exactly AI can help, which led me to t
 	
 ## Project Overview
 
-### Estalbish a dataset
-First the most important thing to do is find areliable and valid dataset that can be used in my project, this includes preorcessing and analysing the data to ensure it
+### Establish a dataset
+As it mentioned previously, the main aim of this project is to use ensemble methods to predict diabetes in elderly care. First the most important thing to do is find areliable and valid dataset that can be used in my project, this includes preorcessing and analysing the data to ensure it
 is suited for my scenario. Data analysis will be spoken about in more depth later on.
 
 ### Machine Learning Models
@@ -75,7 +75,7 @@ Data preprocessing is an important step when using datasets for AI models. I did
     diabetes_data = pd.read_csv(file_path)
     ```
 
-2. **Identifying Column Types**:
+2. **Identifying Column Types**:																		
     - Columns are classified into categorical and numerical types for appropriate preprocessing.
 
     ```python
