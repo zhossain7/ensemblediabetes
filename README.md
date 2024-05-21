@@ -6,6 +6,10 @@
 1. Project Introduction
 2. Project Overview
 3. Data Analysis
+4. Methodology
+5. Model Evaluation
+6. Final Results
+7. Conclusion
 
 ## Project Introduction
 This project was created because I was doing a subject in university which was discussing the potential benefits of artificial intelligence (AI) if introduced to the medical field. 
@@ -225,5 +229,141 @@ plt.show()
 * There is a noticeable correlation between age and bmi, suggesting that older individuals in this dataset tend to have higher BMI
 
 
+## Methodology
 
+### Individual Models
+### Logistic Regression
+Logistic Regression is a simple yet powerful model for binary classification. It was used with a grid search for hyperparameter tuning, 
+exploring different values of the regularisation parameter 𝐶 and types of regularisation (L1 and L2).
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import GridSearchCV
+
+# Define parameter grid for hyperparameter tuning
+param_grid = {
+    'C': np.logspace(-4, 4, 4),
+    'penalty': ['l1', 'l2'],
+    'solver': ['liblinear']
+}
+
+# Create Logistic Regression model
+log_reg = LogisticRegression(random_state=42)
+
+# Setup GridSearchCV
+grid_search = GridSearchCV(log_reg, param_grid, cv=5, scoring='recall', n_jobs=-1)
+grid_search.fit(X_train, y_train)
+
+# Best Logistic Regression model
+best_log_reg = grid_search.best_estimator_
+```
+### SVM
+Support Vector Machine (SVM) is effective in high-dimensional spaces. We used a grid search to find the best values for the regularisation parameter 
+𝐶 and the kernel coefficient 𝛾.
+```python
+from sklearn.svm import SVC
+
+# Define parameter grid for hyperparameter tuning
+param_grid = {
+    'C': [0.1, 1, 10],
+    'gamma': ['scale', 'auto'],
+    'kernel': ['rbf', 'linear']
+}
+
+# Create SVM model
+svm_model = SVC(random_state=42, probability=True)
+
+# Setup GridSearchCV
+grid_search = GridSearchCV(svm_model, param_grid, cv=5, scoring='accuracy', n_jobs=-1)
+grid_search.fit(X_train, y_train)
+
+# Best SVM model
+best_svm = grid_search.best_estimator_
+```
+### XGBOOST
+XGBoost is an efficient and scalable implementation of gradient boosting. We tuned parameters such as the learning rate, maximum depth of trees, number of estimators, and subsample ratio.
+```python
+import xgboost as xgb
+
+# Define parameter grid for hyperparameter tuning
+param_grid = {
+    'learning_rate': [0.01, 0.1, 0.3],
+    'max_depth': [3, 5, 7],
+    'n_estimators': [100, 200, 300],
+    'subsample': [0.8, 0.9, 1.0]
+}
+
+# Create XGBoost model
+xgb_model = xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss', random_state=42)
+
+# Setup GridSearchCV
+grid_search = GridSearchCV(xgb_model, param_grid, cv=5, scoring='accuracy', n_jobs=-1)
+grid_search.fit(X_train, y_train)
+
+# Best XGBoost model
+best_xgboost = grid_search.best_estimator_
+```
+
+## Ensemble Methods
+
+### Voting (Soft and Hard)
+The Voting ensemble method combines multiple machine learning models. In soft voting, the predicted probabilities are averaged, while in hard voting, the class labels are averaged.
+```python
+from sklearn.ensemble import VotingClassifier
+
+# Create VotingClassifier for soft voting
+voting_clf_soft = VotingClassifier(
+    estimators=[('svm', best_svm), ('xgb', best_xgboost), ('log_reg', best_log_reg)],
+    voting='soft'
+)
+
+# Fit the ensemble classifier
+voting_clf_soft.fit(X_train, y_train)
+```
+### ADABoost
+ADABoost combines multiple weak classifiers to create a strong classifier. We used decision trees as the base estimator and adjusted the number of estimators and learning rate.
+```python
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.tree import DecisionTreeClassifier
+
+# Create base estimator
+base_estimator = DecisionTreeClassifier(max_depth=1)
+
+# Create ADABoost classifier
+ada_boost_clf = AdaBoostClassifier(
+    base_estimator=base_estimator,
+    n_estimators=50,
+    learning_rate=1.0,
+    random_state=42
+)
+
+# Fit ADABoost
+ada_boost_clf.fit(X_train, y_train)
+```
+### Stacking
+```python
+from sklearn.ensemble import StackingClassifier
+
+# Define the base models
+base_models = [
+    ('svm', best_svm),
+    ('xgb', best_xgboost),
+    ('log_reg', best_log_reg)
+]
+
+# Define meta-learner
+meta_learner = LogisticRegression()
+
+# Create StackingClassifier
+stacking_clf = StackingClassifier(
+    estimators=base_models,
+    final_estimator=meta_learner,
+    cv=5,
+    n_jobs=-1
+)
+
+# Fit the stacking classifier
+stacking_clf.fit(X_train, y_train)
+```
+By integrating these individual models and ensemble methods, I aim to develop a robust predictive model that enhances the accuracy and reliability of diabetes prediction. 
+The combination of diverse models helps mitigate the weaknesses of individual models, resulting in improved overall performance.
 
