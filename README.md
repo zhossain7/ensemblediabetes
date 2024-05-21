@@ -5,7 +5,7 @@
 ## Table of contents
 1. Project Introduction
 2. Project Overview
-3. [Setup](#setup)
+3. Data Analysis
 
 ## Project Introduction
 This project was created because I was doing a subject in university which was discussing the potential benefits of artificial intelligence (AI) if introduced to the medical field. 
@@ -19,7 +19,7 @@ It inspired me to do reserach and see how exactly AI can help, which led me to t
 ## Project Overview
 
 	
-## Data and Analysis
+## Data Analysis
 The dataset useed for this project  is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. It can be availible in Kaggle [right here.](https://www.kaggle.com/datasets/mathchi/diabetes-data-set).
 
 ![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/bfe27470-2e66-4146-80bd-e6b76df509a0)
