@@ -163,6 +163,22 @@ sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 plt.title('Correlation Matrix')
 plt.show()
 ```
+![1be549d8-20d6-4c20-9614-f72a0e524d4b](https://github.com/zhossain7/ensemblediabetes/assets/100549035/268d2999-841d-4f71-8883-d5c001e7f1d1)
+* Explanation: The bar chart illustrates the age distribution of elderly individuals in a diabetes care dataset, with the x-axis showing age and the y-axis representing the frequency of individuals at each age.
+* Analysis: The chart reveals a notable peak at age 80, indicating a higher frequency of having diabetes at this age.
+  
+![a0bc1042-65be-4b20-b739-55e672283e32](https://github.com/zhossain7/ensemblediabetes/assets/100549035/52e24626-8edd-40bb-b47b-354b1d10047f)
+* Explanation: This box plot compares the BMI distributions between individuals with and without diabetes, highlighting any differences in their BMI values.
+* Analysis: The plot reveals that individuals with diabetes tend to have a slightly higher median BMI compared to those without diabetes, suggesting a potential link between higher BMI and the likelihood of having diabetes.
+
+![download](https://github.com/zhossain7/ensemblediabetes/assets/100549035/e9204adc-6393-4d89-9bec-7c08227f142a)
+* Explanation: This scatter plot visualises the relationship between BMI and blood glucose levels, allowing for an examination of how these two variables interact.
+* Analysis: The plot shows a positive trend, indicating that as BMI increases, blood glucose levels tend to increase as well, suggesting a possible correlation between higher BMI and higher blood glucose levels.
+
+![9b5bd86d-c96b-4b05-b39c-a90176f928a5](https://github.com/zhossain7/ensemblediabetes/assets/100549035/86f2ba84-0a7e-4235-a3da-ae2b5a8808bc)
+* Explanation: The heatmap displays the correlation coefficients between different numeric variables in the dataset, showing the strength and direction of their relationships.
+* Analysis: The matrix highlights that blood glucose level has a strong positive correlation with diabetes status, suggesting it is a significant predictor for diabetes in the dataset.
+
 
 #### Insights
 * The majority of the dataset consists of females, which is reflected in the distribution of the gender feature.
