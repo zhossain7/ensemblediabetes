@@ -127,6 +127,50 @@ By applying these preprocessing steps, the dataset is prepared for training mach
 
 ### Exploratory Data Analysis
 
+## Visualisations 
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Histogram of age distribution
+plt.figure(figsize=(10, 6))
+plt.hist(diabetes_data['age'], bins=20, color='skyblue', edgecolor='black')
+plt.title('Age Distribution')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.show()
+
+# Box plot of BMI by diabetes status
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='diabetes', y='bmi', data=diabetes_data)
+plt.title('BMI by Diabetes Status')
+plt.xlabel('Diabetes Status')
+plt.ylabel('BMI')
+plt.show()
+
+# Scatter plot of BMI vs. Blood Glucose Level
+plt.figure(figsize=(10, 6))
+plt.scatter(diabetes_data['bmi'], diabetes_data['blood_glucose_level'], alpha=0.6, c='darkcyan')
+plt.title('BMI vs. Blood Glucose Level')
+plt.xlabel('BMI')
+plt.ylabel('Blood Glucose Level')
+plt.show()
+
+# Correlation heatmap
+plt.figure(figsize=(10, 8))
+corr_matrix = diabetes_data.corr()
+sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
+plt.title('Correlation Matrix')
+plt.show()
+```
+
+## Insights
+* The majority of the dataset consists of females, which is reflected in the distribution of the gender feature.
+* The age distribution shows that the majority of individuals are between 65 and 75 years old, which is expected given the dataset's focus on elderly individuals.
+* The bmi distribution indicates a significant variance, with some individuals having a BMI above 30, indicating obesity, which is a known risk factor for diabetes.
+* The blood_glucose_level feature also shows a wide range, with some individuals having significantly higher levels, which is a direct indicator of diabetes.
+* A correlation heatmap reveals that HbA1c_level and blood_glucose_level are strongly correlated, as expected since both are indicators of blood sugar levels.
+* There is a noticeable correlation between age and bmi, suggesting that older individuals in this dataset tend to have higher BMI
 
 
 
