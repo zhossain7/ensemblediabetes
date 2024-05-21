@@ -29,15 +29,32 @@ It will be important to find individual machine learning models that will be inc
 * Logistic Regression is a statistical method used for binary classification that models the probability of a binary outcome based on one or more predictor variables.
 * This model is useful for understanding the influence of various factors on the likelihood of diabetes, as it provides coefficients that can be interpreted in terms of odds ratios.
 
-### SVM MODEL
+#### SVM MODEL
 * Support Vector Machine (SVM) is a supervised learning algorithm that finds the hyperplane that best separates data into different classes, often used for classification tasks.
 * The SVM model can effectively handle high-dimensional data and identify non-linear relationships between features, which can improve the accuracy of diabetes prediction.
 
-### XGBOOST
+#### XGBOOST
 * XGBoost (Extreme Gradient Boosting) is a powerful ensemble learning method that builds multiple decision trees in a sequential manner, optimising for the best performance.
 * XGBoost is known for its high performance and efficiency in handling large datasets with many features, making it well-suited for predicting diabetes with high accuracy by capturing complex interactions between variables.
 
-	
+
+### Ensemble Methods
+These individual models, each with their unique strengths, are combined in the ensemble method to leverage their collective predictive power, aiming for improved overall performance and robustness in diabetes prediction.
+
+#### Voting (Soft & Hard)
+* The Voting ensemble method combines multiple machine learning models by averaging their predictions (soft voting) or using a majority rule (hard voting) to make a final prediction.
+Analysis: By combining the strengths of Logistic Regression, SVM, and XGBoost, the Voting method can balance their individual biases and variances, potentially increasing the accuracy and reliability of diabetes predictions.
+
+#### ADABoost
+* ADABoost (Adaptive Boosting) is an ensemble technique that creates a strong classifier by combining multiple weak classifiers, each trained on the data with adjusted weights to focus on previously misclassified instances.
+Analysis: ADABoost can significantly improve model performance by concentrating on difficult cases, enhancing the model's ability to correctly classify individuals at risk of diabetes even when individual models struggle.
+
+#### Stacking
+* Stacking involves training a meta-model (stacker) to combine the predictions of several base models. The base models' outputs are used as inputs for the meta-model, which then makes the final prediction.
+* Stacking leverages the unique strengths of each base model by allowing the meta-model to learn how to best combine their predictions, often leading to superior performance compared to individual models or simpler ensemble methods. This approach is particularly effective for capturing complex patterns in the diabetes dataset.
+
+
+
 ## Data Analysis
 The dataset useed for this project  is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. It can be availible in Kaggle [right here.](https://www.kaggle.com/datasets/mathchi/diabetes-data-set).
 
