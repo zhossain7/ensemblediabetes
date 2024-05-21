@@ -257,7 +257,7 @@ grid_search.fit(X_train, y_train)
 best_log_reg = grid_search.best_estimator_
 ```
 ### SVM
-Support Vector Machine (SVM) is effective in high-dimensional spaces. We used a grid search to find the best values for the regularisation parameter 
+Support Vector Machine (SVM) is effective in high-dimensional spaces. I used a grid search to find the best values for the regularisation parameter 
 𝐶 and the kernel coefficient 𝛾.
 ```python
 from sklearn.svm import SVC
@@ -280,7 +280,7 @@ grid_search.fit(X_train, y_train)
 best_svm = grid_search.best_estimator_
 ```
 ### XGBOOST
-XGBoost is an efficient and scalable implementation of gradient boosting. We tuned parameters such as the learning rate, maximum depth of trees, number of estimators, and subsample ratio.
+XGBoost is an efficient and scalable implementation of gradient boosting. I tuned parameters such as the learning rate, maximum depth of trees, number of estimators, and subsample ratio.
 ```python
 import xgboost as xgb
 
@@ -320,7 +320,7 @@ voting_clf_soft = VotingClassifier(
 voting_clf_soft.fit(X_train, y_train)
 ```
 ### ADABoost
-ADABoost combines multiple weak classifiers to create a strong classifier. We used decision trees as the base estimator and adjusted the number of estimators and learning rate.
+ADABoost combines multiple weak classifiers to create a strong classifier. I used decision trees as the base estimator and adjusted the number of estimators and learning rate.
 ```python
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.tree import DecisionTreeClassifier
