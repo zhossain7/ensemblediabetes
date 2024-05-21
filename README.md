@@ -127,7 +127,7 @@ By applying these preprocessing steps, the dataset is prepared for training mach
 
 ### Exploratory Data Analysis
 
-## Visualisations 
+#### Visualisations 
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -164,7 +164,7 @@ plt.title('Correlation Matrix')
 plt.show()
 ```
 
-## Insights
+#### Insights
 * The majority of the dataset consists of females, which is reflected in the distribution of the gender feature.
 * The age distribution shows that the majority of individuals are between 65 and 75 years old, which is expected given the dataset's focus on elderly individuals.
 * The bmi distribution indicates a significant variance, with some individuals having a BMI above 30, indicating obesity, which is a known risk factor for diabetes.
