@@ -18,6 +18,25 @@ It inspired me to do reserach and see how exactly AI can help, which led me to t
 	
 ## Project Overview
 
+### Estalbish a dataset
+First the most important thing to do is find areliable and valid dataset that can be used in my project, this includes preorcessing and analysing the data to ensure it
+is suited for my scenario. Data analysis will be spoken about in more depth later on.
+
+### Machine Learning Models
+It will be important to find individual machine learning models that will be incroproated into the final ensemble methods. The three models I have utilised are as follows.
+
+#### Logistic Regression 
+* Logistic Regression is a statistical method used for binary classification that models the probability of a binary outcome based on one or more predictor variables.
+* This model is useful for understanding the influence of various factors on the likelihood of diabetes, as it provides coefficients that can be interpreted in terms of odds ratios.
+
+### SVM MODEL
+* Support Vector Machine (SVM) is a supervised learning algorithm that finds the hyperplane that best separates data into different classes, often used for classification tasks.
+* The SVM model can effectively handle high-dimensional data and identify non-linear relationships between features, which can improve the accuracy of diabetes prediction.
+
+### XGBOOST
+* XGBoost (Extreme Gradient Boosting) is a powerful ensemble learning method that builds multiple decision trees in a sequential manner, optimising for the best performance.
+* XGBoost is known for its high performance and efficiency in handling large datasets with many features, making it well-suited for predicting diabetes with high accuracy by capturing complex interactions between variables.
+
 	
 ## Data Analysis
 The dataset useed for this project  is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. It can be availible in Kaggle [right here.](https://www.kaggle.com/datasets/mathchi/diabetes-data-set).
@@ -25,7 +44,7 @@ The dataset useed for this project  is originally from the National Institute of
 ![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/bfe27470-2e66-4146-80bd-e6b76df509a0)
 ![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/d4dd3612-710b-460b-804c-564de8db06fa)
 
-The dataset has 100,000 individuals, however after extracing indviduals aged 65 or above, I was left with 18,568. This shorter dataset is what was used to train my models and then predict on.\
+The dataset has 100,000 individuals, however after extracing indviduals aged 65 or above, I was left with 18,568. This shorter dataset is what was used to train my models and then predict on.
 
 ### Data Preprocessing
 Data preprocessing is an important step when using datasets for AI models. I did extensive research on possible preprocessing techniques and identified the most effective ones for my scenario and specific dataset. The following preprocessing steps were applied:
