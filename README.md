@@ -2,9 +2,23 @@
 
 
 
+## Table of Contents
 1. [Project Introduction](#project-introduction)
 2. [Project Overview](#project-overview)
+    * [Establish a Dataset](#establish-a-dataset)
+    * [Machine Learning Models](#machine-learning-models)
+        - [Logistic Regression](#logistic-regression)
+        - [SVM Model](#svm-model)
+        - [XGBoost](#xgboost)
+    * [Ensemble Methods](#ensemble-methods)
+        - [Voting (Soft & Hard)](#voting-soft--hard)
+        - [AdaBoost](#adaboost)
+        - [Stacking](#stacking)
 3. [Data Analysis](#data-analysis)
+    * [Data Preprocessing](#data-preprocessing)
+    * [Exploratory Data Analysis](#exploratory-data-analysis)
+        - [Visualisations](#visualisations)
+        - [Feature Importance](#feature-importance)
 4. [Methodology](#methodology)
 5. [Model Evaluation](#model-evaluation)
 6. [Final Results](#final-results)
