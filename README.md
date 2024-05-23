@@ -2,14 +2,14 @@
 
 
 
-## Table of contents
 1. [Project Introduction](#project-introduction)
-2. Project Overview
+2. [Project Overview](#project-overview)
 3. [Data Analysis](#data-analysis)
-4. Methodology
-5. Model Evaluation
-6. Final Results
-7. Conclusion
+4. [Methodology](#methodology)
+5. [Model Evaluation](#model-evaluation)
+6. [Final Results](#final-results)
+7. [Conclusion](#conclusion)
+
 
 ## Project Introduction
 This project was created because I was doing a subject in university which was discussing the potential benefits of artificial intelligence (AI) if introduced to the medical field. 
