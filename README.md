@@ -222,7 +222,7 @@ plt.show()
 #### Feature Importance
 ![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/a8daebe5-c40b-449e-beb2-a1c930dd1391)
 
-Feature importance helps us understand which features contribute the most to the prediction of diabetes. Here, we use the XGBoost model to determine the importance of various features in our dataset. 
+Feature importance helps us understand which features contribute the most to the prediction of diabetes. Here, I use the XGBoost model to determine the importance of various features in our dataset. 
 The feature importance plot provides insights into which features have the most significant impact on the model's predictions.
 
 
@@ -389,7 +389,7 @@ By integrating these individual models and ensemble methods, I aim to develop a 
 The combination of diverse models helps mitigate the weaknesses of individual models, resulting in improved overall performance.
 
 ## Model Evaluation
-In this section, we evaluate the performance of our trained models using a variety of metrics. The primary metrics we focus on are precision, recall, F1-score, and accuracy. These metrics provide a comprehensive understanding of each model's strengths and weaknesses. 
+In this section, I evaluate the performance of our trained models using a variety of metrics. The primary metrics I focus on is precision, recall, F1-score, and accuracy. These metrics provide a comprehensive understanding of each model's strengths and weaknesses. 
 
 1. Precision: Precision is the ratio of true positive predictions to the total number of positive predictions made by the model. High precision indicates a low false positive rate.
 * Class 0 (No Diabetes): Precision indicates how many of the individuals predicted to not have diabetes actually do not have it.
@@ -429,5 +429,27 @@ In this section, we evaluate the performance of our trained models using a varie
 
 These evaluation metrics provide a comprehensive understanding of how each ensemble method performs. The Stacking Ensemble model stands out as the best performing method, followed by AdaBoost and Soft Voting. The Stacking Ensemble's ability to leverage multiple base models results in superior performance, while AdaBoost and Soft Voting also demonstrate strong predictive capabilities.
 
+## Final Results
 
+### Summary of Model Performance
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/14093b41-b5b8-41f4-8cc0-81cf8493972e)
+
+### Analysis of Results
+
+**AdaBoost:**
+* **Performance:** The AdaBoost classifier achieves a high accuracy of 92%, with balanced precision and recall for both diabetic and non-diabetic classes. The F1-scores of 0.92 indicate the model's effectiveness in handling class imbalances and maintaining consistent predictive performance.
+* **Significance:** The balanced performance of AdaBoost makes it a reliable choice for predicting diabetes, providing both high precision (reducing false positives) and high recall (reducing false negatives).
+  
+**Stacking Ensemble:**
+* Performance:** The Stacking Ensemble model demonstrates the highest accuracy at 95%, with very high precision and recall for both classes. The F1-scores of 0.95 reflect the model's robustness and ability to leverage multiple base models for superior predictive performance.
+* **Significance:** The exceptional performance of the Stacking Ensemble model highlights its potential as the best approach for predicting diabetes. It combines the strengths of individual models to achieve high accuracy and reliability, making it a powerful tool for medical diagnosis.
+  
+**Soft Voting:**
+
+* **Performance:** The Soft Voting classifier shows balanced precision and recall for both classes, with an overall accuracy of 89%. The F1-scores of 0.90 and 0.89 for classes 0 and 1, respectively, indicate a reliable performance, though slightly lower than AdaBoost and Stacking Ensemble.
+* **Significance:** While the Soft Voting classifier is slightly less accurate, its balanced performance makes it a viable option for diabetes prediction. It effectively combines the predictions of its base models, providing a robust and reliable approach.
+
+The final results demonstrate that ensemble methods significantly enhance the predictive performance of machine learning models for diabetes detection. Among the evaluated methods, the Stacking Ensemble model stands out with the highest accuracy and balanced performance across all metrics. AdaBoost also shows strong results, making it a reliable alternative. Soft Voting, while slightly less accurate, still provides a robust approach for predicting diabetes.
+
+These findings underscore the importance of leveraging ensemble methods in medical diagnosis tasks, where high accuracy and reliability are crucial. The results also highlight the potential of machine learning models to aid in early detection and management of diabetes, ultimately contributing to better healthcare outcomes for the elderly population.
 
