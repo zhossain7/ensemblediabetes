@@ -17,6 +17,7 @@
 3. [Data Analysis](#data-analysis)
     * [Data Preprocessing](#data-preprocessing)
     * [Exploratory Data Analysis](#exploratory-data-analysis)
+        -[Synthetic Minority Over-sampling Technique (SMOTE)](#synthetic-minority-over-sampling-technique-smote)
         - [Visualisations](#visualisations)
         - [Feature Importance](#feature-importance)
 4. [Methodology](#methodology)
