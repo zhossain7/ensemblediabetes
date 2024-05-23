@@ -416,5 +416,17 @@ In this section, we evaluate the performance of our trained models using a varie
 * XGBoost: XGBoost demonstrates the highest performance among the models with an accuracy of 95%. It shows very high precision and recall for both classes, with F1-scores of 0.95 for both classes. This suggests that XGBoost is highly effective in correctly identifying both diabetic and non-diabetic individuals, making it the most robust model in this evaluation.
 
 
+### Ensemble Models
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/a5685218-8713-49c3-85fe-ddb34c9db044)
+
+#### Evaluation Analysis
+* ADABoost: The AdaBoost classifier demonstrates a balanced performance with high precision and recall for both classes. The overall accuracy of 92% indicates that the model is effective in distinguishing between diabetic and non-diabetic individuals.
+  The balanced F1-scores (0.92) for both classes further confirm the model's robustness in handling class imbalances and maintaining consistent predictive performance.
+  
+* Stacking: The Stacking Ensemble model performs exceptionally well, achieving an accuracy of 95%. The precision and recall for both classes are high, with F1-scores of 0.95, indicating that the model effectively combines the strengths of its base models. This results in superior predictive performance, making it highly reliable for predicting diabetes.
+  
+* Soft Voting:The Soft Voting classifier shows a balanced precision and recall for both classes, with an overall accuracy of 89%. The F1-scores are also balanced at 0.90 and 0.89 for classes 0 and 1, respectively. This indicates that the model effectively balances the predictions of its base models to achieve reliable performance, though it is slightly less accurate compared to AdaBoost and Stacking Ensemble.
+
+
 
 
