@@ -427,6 +427,7 @@ In this section, we evaluate the performance of our trained models using a varie
   
 * Soft Voting:The Soft Voting classifier shows a balanced precision and recall for both classes, with an overall accuracy of 89%. The F1-scores are also balanced at 0.90 and 0.89 for classes 0 and 1, respectively. This indicates that the model effectively balances the predictions of its base models to achieve reliable performance, though it is slightly less accurate compared to AdaBoost and Stacking Ensemble.
 
+These evaluation metrics provide a comprehensive understanding of how each ensemble method performs. The Stacking Ensemble model stands out as the best performing method, followed by AdaBoost and Soft Voting. The Stacking Ensemble's ability to leverage multiple base models results in superior performance, while AdaBoost and Soft Voting also demonstrate strong predictive capabilities.
 
 
 
