@@ -3,9 +3,9 @@
 
 
 ## Table of contents
-1. Project Introduction
+1. [Project Introduction](#project-introduction)
 2. Project Overview
-3. Data Analysis
+3. [Data Analysis](#data-analysis)
 4. Methodology
 5. Model Evaluation
 6. Final Results
