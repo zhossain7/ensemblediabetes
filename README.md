@@ -16,6 +16,7 @@
         - [Stacking](#stacking)
 3. [Data Analysis](#data-analysis)
     * [Data Preprocessing](#data-preprocessing)
+        - [Synthetic Minority Over-sampling Technique (SMOTE)](#synthetic-minority-over-sampling-technique-smote)
         - [Visualisations](#visualisations)
         - [Exploratory Data Analysis](#exploratory-data-analysis)
         - [Feature Importance](#feature-importance)
