@@ -219,6 +219,27 @@ plt.show()
 * Explanation: The heatmap displays the correlation coefficients between different numeric variables in the dataset, showing the strength and direction of their relationships.
 * Analysis: The matrix highlights that blood glucose level has a strong positive correlation with diabetes status, suggesting it is a significant predictor for diabetes in the dataset.
 
+#### Feature Importance
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/a8daebe5-c40b-449e-beb2-a1c930dd1391)
+
+Feature importance helps us understand which features contribute the most to the prediction of diabetes. Here, we use the XGBoost model to determine the importance of various features in our dataset. 
+The feature importance plot provides insights into which features have the most significant impact on the model's predictions.
+
+
+**Explanation:**
+* The bar chart visualizes the importance of each feature used by the XGBoost model to predict diabetes.
+* The x-axis represents the different features in the dataset, and the y-axis shows their respective importance scores.
+* 
+**Analysis:**
+
+* **num_HbA1c_level:** This feature has the highest importance score, indicating that HbA1c levels are the most influential in predicting diabetes. HbA1c is a measure of blood sugar levels over the past three months, making it a critical indicator of diabetes.
+* **num_blood_glucose_level:** The second most important feature is the blood glucose level. This feature is also directly related to diabetes, as high blood glucose levels are a primary symptom of the disease.
+* *8num_bmi:** BMI (Body Mass Index) is another significant feature. Higher BMI is associated with an increased risk of diabetes, reflecting its importance in the model.
+* **num_hypertension:** Hypertension (high blood pressure) also shows some importance, indicating its role as a potential risk factor for diabetes.
+
+The feature importance plot highlights that HbA1c levels and blood glucose levels are the most critical predictors of diabetes in this dataset. Other features like BMI, hypertension, and smoking history also play significant roles. 
+Understanding these importance scores helps in focusing on the most relevant features for diabetes prediction and provides insights into the underlying factors influencing the model's decisions.
+
 
 #### Insights
 * The majority of the dataset consists of females, which is reflected in the distribution of the gender feature.
