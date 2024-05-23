@@ -167,6 +167,21 @@ By applying these preprocessing steps, the dataset is prepared for training mach
 
 ### Exploratory Data Analysis
 
+#### Synthetic Minority Over-sampling Technique (SMOTE)
+
+The application of SMOTE (Synthetic Minority Over-sampling Technique) significantly improved the recall for predicting diabetes (Class 1) using both Hard Voting and Soft Voting ensemble methods.
+
+**Analysis**
+
+**1. Before Applying SMOTE:**
+
+Both Hard Voting and Soft Voting methods exhibited high recall for non-diabetic cases (Class 0) but struggled with recall for diabetic cases (Class 1). This indicates that the models were more adept at correctly identifying non-diabetic individuals but often missed diabetic cases, which is problematic for medical diagnosis.
+
+**2. After Applying SMOTE:**
+The recall for diabetic cases (Class 1) improved notably for both Hard Voting and Soft Voting methods. This enhancement suggests that SMOTE effectively balanced the dataset by addressing class imbalances, leading to better model performance in identifying actual diabetes cases. Consequently, the models became more reliable for predicting diabetes, ensuring fewer false negatives and enhancing the overall effectiveness of the diagnostic tool.
+
+In summary, the use of SMOTE improved the model's ability to detect diabetic cases without compromising the identification of non-diabetic cases, thereby providing a more balanced and effective predictive performance.
+
 #### Visualisations 
 ```python
 import matplotlib.pyplot as plt
