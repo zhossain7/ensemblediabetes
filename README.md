@@ -368,6 +368,21 @@ By integrating these individual models and ensemble methods, I aim to develop a 
 The combination of diverse models helps mitigate the weaknesses of individual models, resulting in improved overall performance.
 
 ## Model Evaluation
+In this section, we evaluate the performance of our trained models using a variety of metrics. The primary metrics we focus on are precision, recall, F1-score, and accuracy. These metrics provide a comprehensive understanding of each model's strengths and weaknesses. 
+
+1. Precision: Precision is the ratio of true positive predictions to the total number of positive predictions made by the model. High precision indicates a low false positive rate.
+* Class 0 (No Diabetes): Precision indicates how many of the individuals predicted to not have diabetes actually do not have it.
+* Class 1 (Diabetes): Precision indicates how many of the individuals predicted to have diabetes actually have it.
+
+ 2. Recall: Recall is the ratio of true positive predictions to the total number of actual positives. High recall indicates a low false negative rate.
+* Class 0 (No Diabetes): Recall indicates how many of the actual non-diabetic individuals were correctly identified.
+* Class 1 (Diabetes): Recall indicates how many of the actual diabetic individuals were correctly identified.
+
+3. F1-Score: The F1-Score is the harmonic mean of precision and recall. It provides a balance between precision and recall, especially useful when the class distribution is imbalanced.
+* Class 0 (No Diabetes): F1-Score balances the precision and recall for non-diabetic individuals.
+* Class 1 (Diabetes): F1-Score balances the precision and recall for diabetic individuals.
+
+4. Accuracy: Accuracy is the ratio of correctly predicted instances to the total instances. It is a measure of the overall effectiveness of the model.
 
 ### Individual Models
 ![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/3a162ca1-0fa7-43bf-b4d0-71607983ecb7)
