@@ -367,3 +367,18 @@ stacking_clf.fit(X_train, y_train)
 By integrating these individual models and ensemble methods, I aim to develop a robust predictive model that enhances the accuracy and reliability of diabetes prediction. 
 The combination of diverse models helps mitigate the weaknesses of individual models, resulting in improved overall performance.
 
+## Model Evaluation
+
+### Individual Models
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/3a162ca1-0fa7-43bf-b4d0-71607983ecb7)
+
+#### Evaluation Analysis
+* Logistic Regression: The model shows a balanced performance between precision and recall for both classes, with an accuracy of 84%. The F1-scores are also fairly balanced between the two classes, indicating the model's effectiveness in predicting both diabetic and non-diabetic individuals.
+
+* SVM: The SVM model exhibits a balanced precision and recall for both classes, with an accuracy of 87%. This indicates that the SVM model is effective in correctly identifying both diabetic and non-diabetic individuals with equal emphasis.
+
+* XGBoost: XGBoost demonstrates the highest performance among the models with an accuracy of 95%. It shows very high precision and recall for both classes, with F1-scores of 0.95 for both classes. This suggests that XGBoost is highly effective in correctly identifying both diabetic and non-diabetic individuals, making it the most robust model in this evaluation.
+
+
+
+
