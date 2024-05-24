@@ -447,7 +447,7 @@ In this section, I evaluate the performance of our trained models using a variet
 
 
 ### Ensemble Models
-![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/a5685218-8713-49c3-85fe-ddb34c9db044)
+
 
 #### Evaluation Analysis
 * ADABoost: The AdaBoost classifier demonstrates a balanced performance with high precision and recall for both classes. The overall accuracy of 92% indicates that the model is effective in distinguishing between diabetic and non-diabetic individuals.
