@@ -447,7 +447,7 @@ In this section, I evaluate the performance of our trained models using a variet
 
 
 ### Ensemble Models
-
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/a5685218-8713-49c3-85fe-ddb34c9db044)
 
 #### Evaluation Analysis
 * ADABoost: The AdaBoost classifier demonstrates a balanced performance with high precision and recall for both classes. The overall accuracy of 92% indicates that the model is effective in distinguishing between diabetic and non-diabetic individuals.
@@ -462,7 +462,6 @@ These evaluation metrics provide a comprehensive understanding of how each ensem
 ## Final Results
 
 ### Summary of Model Performance
-![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/14093b41-b5b8-41f4-8cc0-81cf8493972e)
 
 ### Analysis of Results
 
@@ -482,4 +481,3 @@ These evaluation metrics provide a comprehensive understanding of how each ensem
 The final results demonstrate that ensemble methods significantly enhance the predictive performance of machine learning models for diabetes detection. Among the evaluated methods, the Stacking Ensemble model stands out with the highest accuracy and balanced performance across all metrics. AdaBoost also shows strong results, making it a reliable alternative. Soft Voting, while slightly less accurate, still provides a robust approach for predicting diabetes.
 
 These findings underscore the importance of leveraging ensemble methods in medical diagnosis tasks, where high accuracy and reliability are crucial. The results also highlight the potential of machine learning models to aid in early detection and management of diabetes, ultimately contributing to better healthcare outcomes for the elderly population.
-
