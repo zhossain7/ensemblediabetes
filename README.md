@@ -491,5 +491,11 @@ Through extensive data preprocessing, model training, and evaluation, we have sh
 I have developed a user-friendly GUI application to further show how such predictive models can be practically applied to assist healthcare providers and patients. 
 
 The GUI application is designed to take user inputs, preprocess them using the same steps applied during model training, and then use the selected model to make predictions.
+
 ![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/81fdbbc5-a279-4635-8f75-d06bc0f02ed6)
+
+When the details are entered, and the predction is made, it looks like this.
+
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/da6e0c18-526c-4038-b651-f2928d7722f2)
+
 
