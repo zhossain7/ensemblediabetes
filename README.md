@@ -25,7 +25,7 @@
 6. [Final Results](#final-results)
 7. [Conclusion](#conclusion)
 	- [GUI Application](#GUI-Application)
- 	- [Final Thoughts](#Final-Thoughts) 
+ 	- [Final Thoughts](#final-thoughts) 
 
 ## Project Introduction
 This project was created because I was doing a subject in university which was discussing the potential benefits of artificial intelligence (AI) if introduced to the medical field. 
