@@ -481,3 +481,15 @@ These evaluation metrics provide a comprehensive understanding of how each ensem
 The final results demonstrate that ensemble methods significantly enhance the predictive performance of machine learning models for diabetes detection. Among the evaluated methods, the Stacking Ensemble model stands out with the highest accuracy and balanced performance across all metrics. AdaBoost also shows strong results, making it a reliable alternative. Soft Voting, while slightly less accurate, still provides a robust approach for predicting diabetes.
 
 These findings underscore the importance of leveraging ensemble methods in medical diagnosis tasks, where high accuracy and reliability are crucial. The results also highlight the potential of machine learning models to aid in early detection and management of diabetes, ultimately contributing to better healthcare outcomes for the elderly population.
+
+## Conclusion
+
+In conclusion, this project demonstrates the potential of ensemble machine learning methods in predicting diabetes among the elderly. 
+Through extensive data preprocessing, model training, and evaluation, we have shown that models like AdaBoost, Stacking Ensemble, and Soft Voting can provide reliable and accurate predictions.
+
+### GUI Application
+I have developed a user-friendly GUI application to further show how such predictive models can be practically applied to assist healthcare providers and patients. 
+
+The GUI application is designed to take user inputs, preprocess them using the same steps applied during model training, and then use the selected model to make predictions.
+![image](https://github.com/zhossain7/ensemblediabetes/assets/100549035/81fdbbc5-a279-4635-8f75-d06bc0f02ed6)
+
