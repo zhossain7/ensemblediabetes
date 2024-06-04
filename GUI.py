@@ -10,9 +10,9 @@ from sklearn.pipeline import Pipeline
 
 # Load models (example paths, replace with actual paths)
 models = {
-    'Soft Voting': 'C:/Users/zoobe/Documents/projects/diabetesensemble/ensemblediabetes/models/voting_clf_soft.pkl',
-    'ADABoost': 'C:/Users/zoobe/Documents/projects/diabetesensemble/ensemblediabetes/models/ada_boost_clf.pkl',
-    'Stacking Classifier': 'C:/Users/zoobe/Documents/projects/diabetesensemble/ensemblediabetes/models/stacking_clf.pkl'
+    'Soft Voting': '/voting_clf_soft.pkl',
+    'ADABoost': '/ada_boost_clf.pkl',
+    'Stacking Classifier': '/stacking_clf.pkl'
 }
 
 # Define the same preprocessing steps used in the original CSV preprocessing
