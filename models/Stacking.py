@@ -18,7 +18,7 @@ import numpy as np
 import joblib
 from xgboost import XGBClassifier
 
-file_path = 'C:/Users/zoobe/Documents/projects/diabetesensemble/ensemblediabetes/data/diabetes_65.csv'
+file_path = 'locationhere'
 diabetes_data = pd.read_csv(file_path)
 
 # Identifying the types of columns in the dataset to apply appropriate preprocessing.
